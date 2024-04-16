@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Encryption</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="text-[#2d3958] bg-[#F8FAFF]">
+    <div class="text-center flex flex-col pt-5">
+      <h1 class="text-4xl font-bold mb-5">Image Encryption & Decryption</h1>
+      <p class="text-[#7b88a8]">
+        Use this site to create encrypted images that can only be decrypted
+        using your secret key
+      </p>
+    </div>
+    <div class="px-32 pb-20">
+      <div class="encrypt rounded-xl bg-white shadow-xl p-8 mt-5">
+        <div class="title flex items-center pb-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 64 64"
+            class="w-14 mr-4"
+          >
+            <defs>
+              <linearGradient
+                id="b"
+                x1="5"
+                x2="59"
+                y1="34"
+                y2="34"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#02aff8" />
+                <stop offset="1" stop-color="#02dbf8" />
+              </linearGradient>
+              <linearGradient
+                id="a"
+                x1="31"
+                x2="33"
+                y1="29.5"
+                y2="29.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#015bbb" />
+                <stop offset="1" stop-color="#02aff8" />
+              </linearGradient>
+              <linearGradient
+                id="c"
+                x1="5"
+                x2="59"
+                y1="13"
+                y2="13"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#0c408d" />
+                <stop offset="1" stop-color="#015bbb" />
+              </linearGradient>
+              <linearGradient
+                id="d"
+                x1="14"
+                x2="50"
+                y1="43.5"
+                y2="43.5"
+                xlink:href="#a"
+              />
+            </defs>
+            <polygon
+              fill="url(#b)"
+              points="59 13 59 55 5 55 5 17 20.08 17 25 13 59 13"
+            />
+            <rect
+              width="14"
+              height="11"
+              x="25"
+              y="24"
+              fill="#fff"
+              rx="3"
+              ry="3"
+            />
+            <path
+              fill="#fff"
+              d="M36,26H28a1,1,0,0,1-1-1V24a5,5,0,0,1,10,0v1A1,1,0,0,1,36,26Zm-7-2h6a3,3,0,0,0-6,0Z"
+            />
+            <path
+              fill="url(#a)"
+              d="M32,31a1,1,0,0,1-1-1V29a1,1,0,0,1,2,0v1A1,1,0,0,1,32,31Z"
+            />
+            <polygon
+              fill="url(#c)"
+              points="59 9 59 13 25 13 20.08 17 5 17 5 9 59 9"
+            />
+            <rect width="36" height="9" x="14" y="39" fill="url(#d)" />
+            <circle cx="19.5" cy="43.5" r="1.5" fill="#fff" />
+            <circle cx="24.5" cy="43.5" r="1.5" fill="#fff" />
+            <circle cx="29.5" cy="43.5" r="1.5" fill="#fff" />
+            <circle cx="34.5" cy="43.5" r="1.5" fill="#fff" />
+            <circle cx="39.5" cy="43.5" r="1.5" fill="#fff" />
+            <circle cx="44.5" cy="43.5" r="1.5" fill="#fff" />
+            <path
+              fill="#122333"
+              d="M5 36a1 1 0 0 1-1-1V34a1 1 0 0 1 2 0v1A1 1 0 0 1 5 36zM59 56H5a1 1 0 0 1-1-1V39a1 1 0 0 1 2 0V54H58V23a1 1 0 0 1 2 0V55A1 1 0 0 1 59 56zM5 31a1 1 0 0 1-1-1V9A1 1 0 0 1 5 8H59a1 1 0 0 1 1 1V19a1 1 0 0 1-2 0V10H6V30A1 1 0 0 1 5 31z"
+            />
+            <path
+              fill="#122333"
+              d="M36,35H28a3,3,0,0,1-3-3V27a3,3,0,0,1,3-3h8a3,3,0,0,1,3,3v5A3,3,0,0,1,36,35Zm-8-9a1,1,0,0,0-1,1v5a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V27a1,1,0,0,0-1-1Z"
+            />
+            <path
+              fill="#122333"
+              d="M36 26H28a1 1 0 0 1-1-1V24a5 5 0 0 1 10 0v1A1 1 0 0 1 36 26zm-7-2h6a3 3 0 0 0-6 0zM20.08 18H5a1 1 0 0 1-1-1V9A1 1 0 0 1 5 8H59a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H42a1 1 0 0 1 0-2H58V10H6v6H19.73l4.64-3.78A1 1 0 0 1 25 12H38a1 1 0 0 1 0 2H25.36l-4.65 3.78A1 1 0 0 1 20.08 18zM50 49H25a1 1 0 0 1 0-2H49V40H15v7h6a1 1 0 0 1 0 2H14a1 1 0 0 1-1-1V39a1 1 0 0 1 1-1H50a1 1 0 0 1 1 1v9A1 1 0 0 1 50 49z"
+            />
+          </svg>
+          <h1 class="text-xl font-medium">Encryption</h1>
+        </div>
+        <form
+          id="encryptionForm"
+          action="http://localhost:5000/encrypt"
+          method="post"
+          enctype="multipart/form-data"
+          class="p-8 border border-solid border-gray-300 rounded-lg space-y-5"
+        >
+          <label for="encImage" class="text-xl">• Upload Image:</label><br />
+          <input
+            type="file"
+            id="encImage"
+            name="encImage"
+            accept="image/*"
+            required
+          /><br />
+          <br />
+          <label for="encKey" class="text-xl">• Encryption Key:</label><br />
+          <input
+            type="text"
+            id="encKey"
+            name="encKey"
+            class="p-3 border border-gray-300 rounded-lg"
+            required
+            maxlength="16"
+          /><br />
+          <button type="submit" class="text-white bg-[#2d3958] p-3 rounded-lg">
+            Encrypt Image
+          </button>
+        </form>
+      </div>
+      <div class="decrypt rounded-xl bg-white shadow-xl p-8 mt-16">
+        <div class="title flex items-center pb-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 64 64"
+            class="w-14 mr-4"
+          >
+            <defs>
+              <linearGradient
+                id="b"
+                x1="7"
+                x2="57"
+                y1="30.5"
+                y2="30.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#02aff8" />
+                <stop offset="1" stop-color="#02dbf8" />
+              </linearGradient>
+              <linearGradient
+                id="a"
+                x1="7"
+                x2="57"
+                y1="11"
+                y2="11"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#0c408d" />
+                <stop offset="1" stop-color="#015bbb" />
+              </linearGradient>
+              <linearGradient
+                id="c"
+                x1="24"
+                x2="40"
+                y1="51"
+                y2="51"
+                xlink:href="#a"
+              />
+            </defs>
+            <path
+              fill="url(#b)"
+              d="M57,12V49H40V47a2,2,0,0,0-2-2H26a2,2,0,0,0-2,2v2H7V15H23.08L26,12Z"
+            />
+            <polygon
+              fill="url(#a)"
+              points="57 7 57 12 26 12 23.08 15 7 15 7 7 57 7"
+            />
+            <path
+              fill="#fff"
+              d="M20 25a1 1 0 0 1-1-1V19a1 1 0 0 1 2 0v5A1 1 0 0 1 20 25zM24 25a1 1 0 0 1-1-1V19a1 1 0 0 1 2 0v5A1 1 0 0 1 24 25zM36 25a1 1 0 0 1-1-1V19a1 1 0 0 1 2 0v5A1 1 0 0 1 36 25zM30 25a3 3 0 0 1-3-3V21a3 3 0 0 1 6 0v1A3 3 0 0 1 30 25zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V21A1 1 0 0 0 30 20z"
+            />
+            <path
+              fill="#fff"
+              d="M20 25a1 1 0 0 1-1-1V19a1 1 0 0 1 2 0v5A1 1 0 0 1 20 25zM24 25a1 1 0 0 1-1-1V19a1 1 0 0 1 2 0v5A1 1 0 0 1 24 25zM30 25a3 3 0 0 1-3-3V21a3 3 0 0 1 6 0v1A3 3 0 0 1 30 25zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V21A1 1 0 0 0 30 20zM12 45a1 1 0 0 1-1-1V39a1 1 0 0 1 2 0v5A1 1 0 0 1 12 45zM18 45a3 3 0 0 1-3-3V41a3 3 0 0 1 6 0v1A3 3 0 0 1 18 45zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V41A1 1 0 0 0 18 40z"
+            />
+            <path
+              fill="#fff"
+              d="M12 45a1 1 0 0 1-1-1V39a1 1 0 0 1 2 0v5A1 1 0 0 1 12 45zM18 45a3 3 0 0 1-3-3V41a3 3 0 0 1 6 0v1A3 3 0 0 1 18 45zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V41A1 1 0 0 0 18 40zM50 35a3 3 0 0 1-3-3V31a3 3 0 0 1 6 0v1A3 3 0 0 1 50 35zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V31A1 1 0 0 0 50 30z"
+            />
+            <path
+              fill="#fff"
+              d="M50 35a3 3 0 0 1-3-3V31a3 3 0 0 1 6 0v1A3 3 0 0 1 50 35zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V31A1 1 0 0 0 50 30zM42 25a3 3 0 0 1-3-3V21a3 3 0 0 1 6 0v1A3 3 0 0 1 42 25zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V21A1 1 0 0 0 42 20zM36 35a1 1 0 0 1-1-1V29a1 1 0 0 1 2 0v5A1 1 0 0 1 36 35zM32 35a1 1 0 0 1-1-1V29a1 1 0 0 1 2 0v5A1 1 0 0 1 32 35zM20 35a1 1 0 0 1-1-1V29a1 1 0 0 1 2 0v5A1 1 0 0 1 20 35zM16 35a1 1 0 0 1-1-1V29a1 1 0 0 1 2 0v5A1 1 0 0 1 16 35zM12 35a1 1 0 0 1-1-1V29a1 1 0 0 1 2 0v5A1 1 0 0 1 12 35zM42 35a3 3 0 0 1-3-3V31a3 3 0 0 1 6 0v1A3 3 0 0 1 42 35zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V31A1 1 0 0 0 42 30zM26 35a3 3 0 0 1-3-3V31a3 3 0 0 1 6 0v1A3 3 0 0 1 26 35zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V31A1 1 0 0 0 26 30zM44 44a1 1 0 0 1-1-1V38a1 1 0 0 1 2 0v5A1 1 0 0 1 44 44zM50 44a3 3 0 0 1-3-3V40a3 3 0 0 1 6 0v1A3 3 0 0 1 50 44zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V40A1 1 0 0 0 50 39zM48 25a1 1 0 0 1-1-1V19a1 1 0 0 1 2 0v5A1 1 0 0 1 48 25zM52 25a1 1 0 0 1-1-1V19a1 1 0 0 1 2 0v5A1 1 0 0 1 52 25zM14 25a3 3 0 0 1-3-3V21a3 3 0 0 1 6 0v1A3 3 0 0 1 14 25zm0-5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V21A1 1 0 0 0 14 20z"
+            />
+            <path
+              fill="url(#c)"
+              d="M40,47.57v6.86A2.63,2.63,0,0,1,37.33,57H26.67A2.63,2.63,0,0,1,24,54.43V47.57A2.63,2.63,0,0,1,26.67,45H37.33A2.63,2.63,0,0,1,40,47.57Z"
+            />
+            <path
+              fill="#fff"
+              d="M31,54a1,1,0,0,1-.71-.29l-2-2a1,1,0,0,1,1.42-1.42L31,51.59l3.29-3.3a1,1,0,0,1,1.42,1.42l-4,4A1,1,0,0,1,31,54Z"
+            />
+            <path
+              fill="#122333"
+              d="M57 34a1 1 0 0 1-1-1V8H52a1 1 0 0 1 0-2h5a1 1 0 0 1 1 1V33A1 1 0 0 1 57 34zM11 50H7a1 1 0 0 1-1-1V7A1 1 0 0 1 7 6H48a1 1 0 0 1 0 2H8V48h3a1 1 0 0 1 0 2zM24 50H15a1 1 0 0 1 0-2h8V47a3 3 0 0 1 3-3h5a1 1 0 0 1 0 2H26a1 1 0 0 0-1 1v2A1 1 0 0 1 24 50zM57 50H40a1 1 0 0 1-1-1V47a1 1 0 0 0-1-1H35a1 1 0 0 1 0-2h3a3 3 0 0 1 3 3v1H56V37a1 1 0 0 1 2 0V49A1 1 0 0 1 57 50z"
+            />
+            <path
+              fill="#122333"
+              d="M38,58H26a3,3,0,0,1-3-3V47a3,3,0,0,1,3-3h5a1,1,0,0,1,0,2H26a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1H38a1,1,0,0,0,1-1V47a1,1,0,0,0-1-1H35a1,1,0,0,1,0-2h3a3,3,0,0,1,3,3v8A3,3,0,0,1,38,58Z"
+            />
+            <path
+              fill="#122333"
+              d="M37 46H35a1 1 0 0 1 0-2h1V42a4 4 0 0 0-4-4 4 4 0 0 0-4 4v2h3a1 1 0 0 1 0 2H27a1 1 0 0 1-1-1V42a6 6 0 1 1 12 0v3A1 1 0 0 1 37 46zM12 16H7a1 1 0 0 1-1-1V7A1 1 0 0 1 7 6H48a1 1 0 0 1 0 2H8v6h4a1 1 0 0 1 0 2z"
+            />
+            <path
+              fill="#122333"
+              d="M23.08,16H16a1,1,0,0,1,0-2h6.66l2.62-2.7A1,1,0,0,1,26,11H56V8H52a1,1,0,0,1,0-2h5a1,1,0,0,1,1,1v5a1,1,0,0,1-1,1H26.42L23.8,15.7A1,1,0,0,1,23.08,16Z"
+            />
+          </svg>
+          <h1 class="text-xl font-medium">Decryption</h1>
+        </div>
+        <form
+          id="decryptionForm"
+          action="http://localhost:5000/decrypt"
+          method="post"
+          enctype="multipart/form-data"
+          class="p-8 border border-solid border-gray-300 rounded-lg space-y-5"
+        >
+          <input type="hidden" id="decEncKey" name="encKey" />
+          <!-- Hidden input field for encryption key -->
+          <label for="decImage" class="text-xl">• Upload Encrypted Image:</label
+          ><br />
+          <input
+            type="file"
+            id="decImage"
+            name="decImage"
+            accept="image/*"
+            required
+          /><br /><br />
+          <label for="decKey" class="text-xl">• Decryption Key:</label><br />
+
+          <input
+            type="text"
+            id="decKey"
+            name="decKey"
+            class="p-3 border border-gray-300 rounded-lg"
+            required
+            maxlength="16"
+          /><br /><br />
+          <button type="submit" class="text-white bg-[#2d3958] p-3 rounded-lg">
+            Decrypt Image
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Function to store encryption key in localStorage
+      document
+        .getElementById("encryptionForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+          var encryptionKey = document.getElementById("encKey").value;
+          localStorage.setItem("encryptionKey", encryptionKey);
+          this.submit(); // Submit the form after storing encryption key
+        });
+
+      // Function to retrieve encryption key from localStorage for decryption
+      document
+        .getElementById("decryptionForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+          var encryptionKey = localStorage.getItem("encryptionKey");
+          document.getElementById("decEncKey").value = encryptionKey; // Set encryption key in hidden input field
+          this.submit(); // Submit the form for decryption
+        });
+    </script>
+  </body>
+</html>
